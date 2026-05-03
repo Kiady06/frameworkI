@@ -1,0 +1,7 @@
+@import "tailwindcss";
+
+@theme {
+  --font-grace: 'Covered By Your Grace', cursive;
+  --font-pt-sans: 'PT Sans Caption', sans-serif;
+  --font-text-me: 'Text Me One', sans-serif;
+}

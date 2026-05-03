@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Reko</title>
+<link rel="shortcut icon" href="img/head-log.jpg" type="image/x-icon" />
+<link href="dist/output.css" rel="stylesheet" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&family=PT+Sans+Caption:wght@400;700&family=Text+Me+One&display=swap" rel="stylesheet" />
+</head>
+<body class="bg-stone-50 text-stone-900 font-pt-sans overflow-x-hidden">
+
+  <!-- NAV -->
+  <header class="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-4 md:px-12 py-4 bg-stone-50/90 backdrop-blur border-b border-stone-200">
+    <a href="/">
+      <img src="img/logo-reko.png" alt="logo Reko" class="h-7 md:h-9 w-auto" />
+    </a>
+    <nav>
+      <ul class="flex gap-4 md:gap-10 list-none">
+        <li><a href="#hero"     class="font-text-me text-[10px] md:text-xs tracking-widest uppercase text-stone-700 hover:text-amber-600 transition-colors">Accueil</a></li>
+        <li><a href="#apropos"  class="font-text-me text-[10px] md:text-xs tracking-widest uppercase text-stone-700 hover:text-amber-600 transition-colors hidden sm:block">À propos</a></li>
+        <li><a href="#concerts" class="font-text-me text-[10px] md:text-xs tracking-widest uppercase text-stone-700 hover:text-amber-600 transition-colors hidden sm:block">Concert</a></li>
+        <li><a href="#musique"  class="font-text-me text-[10px] md:text-xs tracking-widest uppercase text-stone-700 hover:text-amber-600 transition-colors">Musique</a></li>
+        <li><a href="#shop"     class="font-text-me text-[10px] md:text-xs tracking-widest uppercase text-stone-700 hover:text-amber-600 transition-colors hidden sm:block">Shop</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section id="hero" class="min-h-screen flex flex-col items-center justify-center text-center px-6 pt-24 pb-16 relative bg-[url('/img/images.jpeg')] bg-cover bg-center bg-no-repeat">
+    <p class="font-text-me text-xs tracking-[0.25em] uppercase text-amber-600 mb-6">Groupe de musique</p>
+    <h1 class="font-grace text-[clamp(5rem,18vw,13rem)] leading-none text-stone-900 mb-4">Reko</h1>
+    <p class="font-pt-sans text-sm md:text-base text-stone-50 max-w-sm mb-10">"Ankafizo ny fiainana",<br>profitez de votre vie tout simplement.</p>
+    <div class="flex flex-col sm:flex-row gap-3 md:gap-4 w-full sm:w-auto px-6 sm:px-0">
+      <a href="#musique"  class="font-text-me text-xs tracking-widest uppercase px-8 py-3 bg-stone-900 text-stone-50 hover:bg-amber-600 transition-colors text-center">Écouter</a>
+      <a href="#concerts" class="font-text-me text-xs tracking-widest uppercase px-8 py-3 border border-stone-300 text-stone-50 hover:border-amber-600 hover:text-amber-600 transition-colors text-center">Concerts</a>
+    </div>
+  </section>
+
+  <!-- DIVIDER -->
+  <div class="flex items-center gap-6 px-4 md:px-12 my-2">
+    <div class="flex-1 h-px bg-stone-200"></div>
+    <span class="font-text-me text-[10px] tracking-[0.2em] uppercase text-stone-400 whitespace-nowrap">Meilleurs titres</span>
+    <div class="flex-1 h-px bg-stone-200"></div>
+  </div>
+
+  <!-- CARDS : 1 col mobile → 3 col desktop -->
+  <section id="musique" class="px-4 md:px-12 pt-6 pb-24">
+    <h2 class="font-grace text-4xl md:text-5xl text-stone-900 mb-6 md:mb-10">Meilleurs titres</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6">
+
+      <div class="aspect-video md:aspect-[3/4] relative overflow-hidden cursor-pointer hover:-translate-y-1.5 transition-transform duration-300">
+        <img src="img/andao.jpeg" alt="" class="absolute inset-0 w-full h-full object-cover">
+        <span class="absolute top-4 right-4 font-grace text-5xl text-stone-900/10">01</span>
+        <div class="absolute bottom-0 left-0 right-0 p-5 bg-linear-to-t from-stone-900/60 to-transparent">
+          <p class="font-text-me text-[10px] tracking-widest uppercase text-amber-400 mb-1">Single · 2024</p>
+          <p class="font-pt-sans font-bold text-white mb-3">Mitonia</p>
+          <a href="#" class="inline-block font-text-me text-[10px] tracking-widest uppercase px-4 py-2 border border-white/50 text-white hover:bg-white hover:text-stone-900 transition-colors">▶ Écouter</a>
+        </div>
+      </div>
+
+      <div class="aspect-video md:aspect-[3/4] relative overflow-hidden cursor-pointer hover:-translate-y-1.5 transition-transform duration-300">
+        <img src="img/Misia.jpeg" alt="" class="absolute inset-0 w-full h-full object-cover">
+        <span class="absolute top-4 right-4 font-grace text-5xl text-stone-900/10">02</span>
+        <div class="absolute bottom-0 left-0 right-0 p-5 bg-linear-to-t from-stone-900/60 to-transparent">
+          <p class="font-text-me text-[10px] tracking-widest uppercase text-amber-400 mb-1">Single · 2024</p>
+          <p class="font-pt-sans font-bold text-white mb-3">Hafa mintsy</p>
+          <a href="#" class="inline-block font-text-me text-[10px] tracking-widest uppercase px-4 py-2 border border-white/50 text-white hover:bg-white hover:text-stone-900 transition-colors">▶ Écouter</a>
+        </div>
+      </div>
+
+      <div class="aspect-video md:aspect-[3/4] relative overflow-hidden cursor-pointer hover:-translate-y-1.5 transition-transform duration-300">
+        <img src="img/fantatrao.jpeg" alt="" class="absolute inset-0 w-full h-full object-cover">
+        <span class="absolute top-4 right-4 font-grace text-5xl text-stone-900/10">03</span>
+        <div class="absolute bottom-0 left-0 right-0 p-5 bg-linear-to-t from-stone-900/60 to-transparent">
+          <p class="font-text-me text-[10px] tracking-widest uppercase text-amber-400 mb-1">Single · 2024</p>
+          <p class="font-pt-sans font-bold text-white mb-3">Ianao ahy</p>
+          <a href="#" class="inline-block font-text-me text-[10px] tracking-widest uppercase px-4 py-2 border border-white/50 text-white hover:bg-white hover:text-stone-900 transition-colors">▶ Écouter</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="border-t border-stone-200 px-4 md:px-12 py-8 flex flex-col md:flex-row items-center gap-4 md:gap-0 justify-between">
+    <span class="font-grace text-3xl text-stone-900">Reko</span>
+    <p class="font-text-me text-[10px] tracking-widest uppercase text-stone-400">© 2024 Reko — Tous droits réservés</p>
+    <ul class="flex gap-6 list-none">
+      <li><a href="#" class="font-text-me text-[10px] tracking-widest uppercase text-stone-400 hover:text-amber-600 transition-colors">Instagram</a></li>
+      <li><a href="#" class="font-text-me text-[10px] tracking-widest uppercase text-stone-400 hover:text-amber-600 transition-colors">Spotify</a></li>
+      <li><a href="#" class="font-text-me text-[10px] tracking-widest uppercase text-stone-400 hover:text-amber-600 transition-colors">YouTube</a></li>
+    </ul>
+  </footer>
+
+</body>
+</html>
